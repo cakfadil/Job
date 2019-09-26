@@ -1,0 +1,513 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Post Generator "Blog" "Android" v.1.2</title>
+<style> 
+textarea, iframe {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid RGB(98,98,98);
+  border-radius: 5px;
+  background: RGB(226,226,226);
+  font-size: 12px;
+  resize: none;
+  height: 500px;
+}
+textarea {
+padding: 12px;
+}
+iframe {
+padding: 0px;
+margin-top: 5px;
+}
+#Result {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 2px solid RGB(98,98,98);
+  border-radius: 5px;
+  background: RGB(226,226,226);
+  font-size: 12px;
+  resize: none;
+}
+.btndefault {
+padding: 3px 14px;
+margin: 4px 0px 4px 0px;
+border: none;
+border-radius: 2px;
+color: RGB(249,230,230);
+cursor: pointer;
+}
+.red {
+background: RGB(84,18,20);
+}
+.green {
+background: RGB(0,89,20);
+}
+.gray {
+background: RGB(98,98,98);
+}
+.blue {
+background: RGB(0,128,255);
+}
+.btndefault:hover {
+background: RGB(0,0,0);
+}
+input, #btn {
+padding: 3px 10px;
+margin: 2px;
+border: none;
+border-radius: 2px;
+background: RGB(226,226,226);
+width: 100%;
+}
+table{width:100%;}
+#btn {background:red;color:white;cursor:pointer;}
+body{margin:30px;}
+</style>
+</head>
+<body>
+<span style="font-size:12px;">Copyright © 2019 Post Generator <b>"Blog"</b> <b>"Android"</b> v.1.2 <b>All Right Reserved</b> By <b>Cakfadil</b>.</span>
+<hr>
+<table><tbody>
+<tr><td colspan="2"><input id="gambar" placeholder="URL Gambar Postingan" type="text" /></td><td><button id="btn" onclick="clearG()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="deskripsi" placeholder="Deskripsi Postingan" type="text" /></td><td><button id="btn" onclick="clearD()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="h2" placeholder="h2 Judul" type="text" /></td><td><button id="btn" onclick="clearH2()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="jd1" placeholder="Judul Daftar 1" type="text" /></td><td><button id="btn" onclick="clearJD1()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="gd1" placeholder="Gambar Daftar 1" type="text" /></td><td><button id="btn" onclick="clearGD1()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd1a" placeholder="Deskripsi 1 Daftar 1" type="text" /></td><td><button id="btn" onclick="clearDD1a()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd1b" placeholder="Deskripsi 2 Daftar 1" type="text" /></td><td><button id="btn" onclick="clearDD1b()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd1c" placeholder="Deskripsi 3 Daftar 1" type="text" /></td><td><button id="btn" onclick="clearDD1c()">Clear</button></td></tr>
+<tr><td><input id="td1a" placeholder="URL Gambar Daftar 1" type="text" /></td><td><input id="td2a" placeholder="Link Download" type="text" /></td><td><button id="btn" onclick="clearTD1()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="jd2" placeholder="Judul Daftar 2" type="text" /></td><td><button id="btn" onclick="clearJD2()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="gd2" placeholder="Gambar Daftar 2" type="text" /></td><td><button id="btn" onclick="clearGD2()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd2a" placeholder="Deskripsi 1 Daftar 2" type="text" /></td><td><button id="btn" onclick="clearDD2a()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd2b" placeholder="Deskripsi 2 Daftar 2" type="text" /></td><td><button id="btn" onclick="clearDD2b()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd2c" placeholder="Deskripsi 3 Daftar 2" type="text" /></td><td><button id="btn" onclick="clearDD2c()">Clear</button></td></tr>
+<tr><td><input id="td1b" placeholder="URL Gambar Daftar 2" type="text" /></td><td><input id="td2b" placeholder="Link Download" type="text" /></td><td><button id="btn" onclick="clearTD2()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="jd3" placeholder="Judul Daftar 3" type="text" /></td><td><button id="btn" onclick="clearJD3()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="gd3" placeholder="Gambar Daftar 3" type="text" /></td><td><button id="btn" onclick="clearGD3()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd3a" placeholder="Deskripsi 1 Daftar 3" type="text" /></td><td><button id="btn" onclick="clearDD3a()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd3b" placeholder="Deskripsi 2 Daftar 3" type="text" /></td><td><button id="btn" onclick="clearDD3b()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd3c" placeholder="Deskripsi 3 Daftar 3" type="text" /></td><td><button id="btn" onclick="clearDD3c()">Clear</button></td></tr>
+<tr><td><input id="td1c" placeholder="URL Gambar Daftar 3" type="text" /></td><td><input id="td2c" placeholder="Link Download" type="text" /></td><td><button id="btn" onclick="clearTD3()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="jd4" placeholder="Judul Daftar 4" type="text" /></td><td><button id="btn" onclick="clearJD4()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="gd4" placeholder="Gambar Daftar 4" type="text" /></td><td><button id="btn" onclick="clearGD4()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd4a" placeholder="Deskripsi 1 Daftar 4" type="text" /></td><td><button id="btn" onclick="clearDD4a()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd4b" placeholder="Deskripsi 2 Daftar 4" type="text" /></td><td><button id="btn" onclick="clearDD4b()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd4c" placeholder="Deskripsi 3 Daftar 4" type="text" /></td><td><button id="btn" onclick="clearDD4c()">Clear</button></td></tr>
+<tr><td><input id="td1d" placeholder="URL Gambar Daftar 4" type="text" /></td><td><input id="td2d" placeholder="Link Download" type="text" /></td><td><button id="btn" onclick="clearTD4()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="jd5" placeholder="Judul Daftar 5" type="text" /></td><td><button id="btn" onclick="clearJD5()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="gd5" placeholder="Gambar Daftar 5" type="text" /></td><td><button id="btn" onclick="clearGD5()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd5a" placeholder="Deskripsi 1 Daftar 5" type="text" /></td><td><button id="btn" onclick="clearDD5a()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd5b" placeholder="Deskripsi 2 Daftar 5" type="text" /></td><td><button id="btn" onclick="clearDD5b()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd5c" placeholder="Deskripsi 3 Daftar 5" type="text" /></td><td><button id="btn" onclick="clearDD5c()">Clear</button></td></tr>
+<tr><td><input id="td1e" placeholder="URL Gambar Daftar 5" type="text" /></td><td><input id="td2e" placeholder="Link Download" type="text" /></td><td><button id="btn" onclick="clearTD5()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="jd6" placeholder="Judul Daftar 6" type="text" /></td><td><button id="btn" onclick="clearJD6()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="gd6" placeholder="Gambar Daftar 6" type="text" /></td><td><button id="btn" onclick="clearGD6()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd6a" placeholder="Deskripsi 1 Daftar 6" type="text" /></td><td><button id="btn" onclick="clearDD6a()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd6b" placeholder="Deskripsi 2 Daftar 6" type="text" /></td><td><button id="btn" onclick="clearDD6b()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd6c" placeholder="Deskripsi 3 Daftar 6" type="text" /></td><td><button id="btn" onclick="clearDD6c()">Clear</button></td></tr>
+<tr><td><input id="td1f" placeholder="URL Gambar Daftar 6" type="text" /></td><td><input id="td2f" placeholder="Link Download" type="text" /></td><td><button id="btn" onclick="clearTD6()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="jd7" placeholder="Judul Daftar 7" type="text" /></td><td><button id="btn" onclick="clearJD7()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="gd7" placeholder="Gambar Daftar 7" type="text" /></td><td><button id="btn" onclick="clearGD7()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd7a" placeholder="Deskripsi 1 Daftar 7" type="text" /></td><td><button id="btn" onclick="clearDD7a()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd7b" placeholder="Deskripsi 2 Daftar 7" type="text" /></td><td><button id="btn" onclick="clearDD7b()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd7c" placeholder="Deskripsi 3 Daftar 7" type="text" /></td><td><button id="btn" onclick="clearDD7c()">Clear</button></td></tr>
+<tr><td><input id="td1g" placeholder="URL Gambar Daftar 7" type="text" /></td><td><input id="td2g" placeholder="Link Download" type="text" /></td><td><button id="btn" onclick="clearTD7()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="jd8" placeholder="Judul Daftar 8" type="text" /></td><td><button id="btn" onclick="clearJD8()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="gd8" placeholder="Gambar Daftar 8" type="text" /></td><td><button id="btn" onclick="clearGD8()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd8a" placeholder="Deskripsi 1 Daftar 8" type="text" /></td><td><button id="btn" onclick="clearDD8a()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd8b" placeholder="Deskripsi 2 Daftar 8" type="text" /></td><td><button id="btn" onclick="clearDD8b()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd8c" placeholder="Deskripsi 3 Daftar 8" type="text" /></td><td><button id="btn" onclick="clearDD8c()">Clear</button></td></tr>
+<tr><td><input id="td1h" placeholder="URL Gambar Daftar 8" type="text" /></td><td><input id="td2h" placeholder="Link Download" type="text" /></td><td><button id="btn" onclick="clearTD8()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="jd9" placeholder="Judul Daftar 9" type="text" /></td><td><button id="btn" onclick="clearJD9()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="gd9" placeholder="Gambar Daftar 9" type="text" /></td><td><button id="btn" onclick="clearGD9()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd9a" placeholder="Deskripsi 1 Daftar 9" type="text" /></td><td><button id="btn" onclick="clearDD9a()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd9b" placeholder="Deskripsi 2 Daftar 9" type="text" /></td><td><button id="btn" onclick="clearDD9b()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd9c" placeholder="Deskripsi 3 Daftar 9" type="text" /></td><td><button id="btn" onclick="clearDD9c()">Clear</button></td></tr>
+<tr><td><input id="td1i" placeholder="URL Gambar Daftar 9" type="text" /></td><td><input id="td2i" placeholder="Link Download" type="text" /></td><td><button id="btn" onclick="clearTD9()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="jd10" placeholder="Judul Daftar 10" type="text" /></td><td><button id="btn" onclick="clearJD10()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="gd10" placeholder="Gambar Daftar 10" type="text" /></td><td><button id="btn" onclick="clearGD10()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd10a" placeholder="Deskripsi 1 Daftar 10" type="text" /></td><td><button id="btn" onclick="clearDD10a()">Clear</button></td>
+<tr><td colspan="2"><input id="dd10b" placeholder="Deskripsi 2 Daftar 10" type="text" /></td><td><button id="btn" onclick="clearDD10b()">Clear</button></td></tr>
+<tr><td colspan="2"><input id="dd10c" placeholder="Deskripsi 3 Daftar 10" type="text" /></td><td><button id="btn" onclick="clearDD10c()">Clear</button></td></tr></tr>
+<tr><td><input id="td1j" placeholder="URL Gambar Daftar 10" type="text" /></td><td><input id="td2j" placeholder="Link Download" type="text" /></td><td><button id="btn" onclick="clearTD10()">Clear</button></td></tr>
+<tr><td style="text-align:center" colspan="3"><button id="btn" onclick="clearALL()">Clear All</button></td></tr>
+</tbody></table>
+<center>
+Click "<b>Generate</b>"<br>
+<button class="btndefault green" onclick="Generate2()">Generate</button> <button class="btndefault blue" onclick="showhide2()">show/hide</button> <button class="btndefault gray" onclick="copyFormat(Result)">Copy</button></center>
+<div id="Result">
+</div>
+</body>
+<script type="text/javascript">
+function Generate2() {
+  var gambar = document.getElementById("gambar").value;
+  var deskripsi = document.getElementById("deskripsi").value;
+  var h2 = document.getElementById("h2").value;
+  var jd1 = document.getElementById("jd1").value;
+  var gd1 = document.getElementById("gd1").value;
+  var dd1a = document.getElementById("dd1a").value;
+  var dd1b = document.getElementById("dd1b").value;
+  var dd1c = document.getElementById("dd1c").value;
+  var td1a = document.getElementById("td1a").value;
+  var td2a = document.getElementById("td2a").value;
+  var jd2 = document.getElementById("jd2").value;
+  var gd2 = document.getElementById("gd2").value;
+  var dd2a = document.getElementById("dd2a").value;
+  var dd2b = document.getElementById("dd2b").value;
+  var dd2c = document.getElementById("dd2c").value;
+  var td1b = document.getElementById("td1b").value;
+  var td2b = document.getElementById("td2b").value;
+  var jd3 = document.getElementById("jd3").value;
+  var gd3 = document.getElementById("gd3").value;
+  var dd3a = document.getElementById("dd3a").value;
+  var dd3b = document.getElementById("dd3b").value;
+  var dd3c = document.getElementById("dd3c").value;
+  var td1c = document.getElementById("td1c").value;
+  var td2c = document.getElementById("td2c").value;
+  var jd4 = document.getElementById("jd4").value;
+  var gd4 = document.getElementById("gd4").value;
+  var dd4a = document.getElementById("dd4a").value;
+  var dd4b = document.getElementById("dd4b").value;
+  var dd4c = document.getElementById("dd4c").value;
+  var td1d = document.getElementById("td1d").value;
+  var td2d = document.getElementById("td2d").value;
+  var jd5 = document.getElementById("jd5").value;
+  var gd5 = document.getElementById("gd5").value;
+  var dd5a = document.getElementById("dd5a").value;
+  var dd5b = document.getElementById("dd5b").value;
+  var dd5c = document.getElementById("dd5c").value;
+  var td1e = document.getElementById("td1e").value;
+  var td2e = document.getElementById("td2e").value;
+  var jd6 = document.getElementById("jd6").value;
+  var gd6 = document.getElementById("gd6").value;
+  var dd6a = document.getElementById("dd6a").value;
+  var dd6b = document.getElementById("dd6b").value;
+  var dd6c = document.getElementById("dd6c").value;
+  var td1f = document.getElementById("td1f").value;
+  var td2f = document.getElementById("td2f").value;
+  var jd7 = document.getElementById("jd7").value;
+  var gd7 = document.getElementById("gd7").value;
+  var dd7a = document.getElementById("dd7a").value;
+  var dd7b = document.getElementById("dd7b").value;
+  var dd7c = document.getElementById("dd7c").value;
+  var td1g = document.getElementById("td1g").value;
+  var td2g = document.getElementById("td2g").value;
+  var jd8 = document.getElementById("jd8").value;
+  var gd8 = document.getElementById("gd8").value;
+  var dd8a = document.getElementById("dd8a").value;
+  var dd8b = document.getElementById("dd8b").value;
+  var dd8c = document.getElementById("dd8c").value;
+  var td1h = document.getElementById("td1h").value;
+  var td2h = document.getElementById("td2h").value;
+  var jd9 = document.getElementById("jd9").value;
+  var gd9 = document.getElementById("gd9").value;
+  var dd9a = document.getElementById("dd9a").value;
+  var dd9b = document.getElementById("dd9b").value;
+  var dd9c = document.getElementById("dd9c").value;
+  var td1i = document.getElementById("td1i").value;
+  var td2i = document.getElementById("td2i").value;
+  var jd10 = document.getElementById("jd10").value;
+  var gd10 = document.getElementById("gd10").value;
+  var dd10a = document.getElementById("dd10a").value;
+  var dd10b = document.getElementById("dd10b").value;
+  var dd10c = document.getElementById("dd10c").value;
+  var td1j = document.getElementById("td1j").value;
+  var td2j = document.getElementById("td2j").value;
+  document.getElementById("Result").innerHTML = "&lt;img src=&quot;"+gambar+"&quot;/&gt;"+"<br><br>"+deskripsi+"<br>"+"&lt;style&gt;.toc {background-color:#f8f9fa; border:1px solid #a2a9b1; padding:10px 13px; display:table; line-height:1.6em;}.toc h2 {display:inline; margin-right:10px}.toc a {text-decoration:none}.toc a:hover {text-decoration:underline}.toc ul {list-style-type:none; list-style-image:none; margin-left:0px; margin-bottom:0px; padding:0px; text-align:left}.toc ul li a {margin-left:.5em}.toc ul li ul {margin-left:2em}.toctogglelabel {cursor:pointer; color:#0645ad}:not(:checked) &gt; .toctoggle {display:inline !important; position:absolute;  opacity:0}:not(:checked) &gt; .toctogglespan:before {content:&#039;[&#039;}.toctoggle:not(:checked) + .toctitle .toctogglelabel:after {content:&#039;sembunyikan&#039;;display: inline}.toctoggle:checked + .toctitle .toctogglelabel:after {content:&#039;tampilkan&#039;}:not(:checked) &gt; .toctogglespan:after {content:&#039;]&#039;}.toctoggle:checked ~ ul{display:none}.tocbody h2 {border-bottom: 1px solid #a2a9b1; font-family: &#039;Linux Libertine&#039;,&#039;Georgia&#039;,&#039;Times&#039;,serif; line-height: 1.3; margin-bottom: 0.25em; padding: 0;}.tocbody p {margin: 0.5em 0;}:target::before{content:&#039;&#039;; display:block; height:0px; margin-top:0px; visibility:hidden}&lt;/style&gt;"+"<br>"+"&lt;div class=&quot;toc&quot;&gt;&lt;input type=&quot;checkbox&quot; role=&quot;button&quot; id=&quot;toctoggle&quot; class=&quot;toctoggle&quot;&gt;&lt;div class=&quot;toctitle&quot;&gt;&lt;h2&gt;Daftar isi&lt;/h2&gt; &lt;span class=&quot;toctogglespan&quot;&gt;&lt;label class=&quot;toctogglelabel&quot; for=&quot;toctoggle&quot;&gt;&lt;/label&gt;&lt;/span&gt;&lt;/div&gt;"+"<br>"+"&lt;ul&gt;"+"<br>"+"&lt;li&gt;1. &lt;a href=&quot;#toc1&quot; title=&quot;"+jd1+"&quot;&gt;"+jd1+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;2. &lt;a href=&quot;#toc2&quot; title=&quot;"+jd2+"&quot;&gt;"+jd2+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;3. &lt;a href=&quot;#toc3&quot; title=&quot;"+jd3+"&quot;&gt;"+jd3+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;4. &lt;a href=&quot;#toc4&quot; title=&quot;"+jd4+"&quot;&gt;"+jd4+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;5. &lt;a href=&quot;#toc5&quot; title=&quot;"+jd5+"&quot;&gt;"+jd5+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;6. &lt;a href=&quot;#toc6&quot; title=&quot;"+jd6+"&quot;&gt;"+jd6+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;7. &lt;a href=&quot;#toc7&quot; title=&quot;"+jd7+"&quot;&gt;"+jd7+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;8. &lt;a href=&quot;#toc8&quot; title=&quot;"+jd8+"&quot;&gt;"+jd8+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;9. &lt;a href=&quot;#toc9&quot; title=&quot;"+jd9+"&quot;&gt;"+jd9+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;10. &lt;a href=&quot;#toc10&quot; title=&quot;"+jd10+"&quot;&gt;"+jd10+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;/ul&gt;"+"<br>"+"&lt;/div&gt;"+"<br><br>"+"&lt;h2&gt;"+h2+"&lt;/h2&gt;"+"<br><br>"+"&lt;b id=&quot;toc1&quot;&gt;"+jd1+"&lt;/b&gt;"+"<br><br>"+"&lt;img src=&quot;"+gd1+"&quot;/&gt;"+"<br><br>"+dd1a+"<br><br>"+dd1b+"<br><br>"+dd1c+"<br><br>"+"&lt;table&gt;&lt;tbody&gt;<br>"+"&lt;tr&gt;<br>&lt;td&gt;&lt;img src=&quot;"+td1a+"&quot;/&gt;&lt;/td&gt;"+"&lt;td&gt;&lt;ul class=&quot;button&quot;&gt;&lt;li&gt;&lt;a class=&quot;demo&quot; href=&quot;"+td2a+"&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+"<br><br>"+"&lt;b id=&quot;toc2&quot;&gt;"+jd2+"&lt;/b&gt;"+"<br><br>"+"&lt;img src=&quot;"+gd2+"&quot;/&gt;"+"<br><br>"+dd2a+"<br><br>"+dd2b+"<br><br>"+dd2c+"<br><br>"+"&lt;table&gt;&lt;tbody&gt;<br>"+"&lt;tr&gt;<br>&lt;td&gt;&lt;img src=&quot;"+td1b+"&quot;/&gt;&lt;/td&gt;"+"&lt;td&gt;&lt;ul class=&quot;button&quot;&gt;&lt;li&gt;&lt;a class=&quot;demo&quot; href=&quot;"+td2b+"&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+"<br><br>"+"&lt;b id=&quot;toc3&quot;&gt;"+jd3+"&lt;/b&gt;"+"<br><br>"+"&lt;img src=&quot;"+gd3+"&quot;/&gt;"+"<br><br>"+dd3a+"<br><br>"+dd3b+"<br><br>"+dd3c+"<br><br>"+"&lt;table&gt;&lt;tbody&gt;<br>"+"&lt;tr&gt;<br>&lt;td&gt;&lt;img src=&quot;"+td1c+"&quot;/&gt;&lt;/td&gt;"+"&lt;td&gt;&lt;ul class=&quot;button&quot;&gt;&lt;li&gt;&lt;a class=&quot;demo&quot; href=&quot;"+td2c+"&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+"<br><br>"+"&lt;b id=&quot;toc4&quot;&gt;"+jd4+"&lt;/b&gt;"+"<br><br>"+"&lt;img src=&quot;"+gd4+"&quot;/&gt;"+"<br><br>"+dd4a+"<br><br>"+dd4b+"<br><br>"+dd4c+"<br><br>"+"&lt;table&gt;&lt;tbody&gt;<br>"+"&lt;tr&gt;<br>&lt;td&gt;&lt;img src=&quot;"+td1d+"&quot;/&gt;&lt;/td&gt;"+"&lt;td&gt;&lt;ul class=&quot;button&quot;&gt;&lt;li&gt;&lt;a class=&quot;demo&quot; href=&quot;"+td2d+"&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+"<br><br>"+"&lt;b id=&quot;toc5&quot;&gt;"+jd5+"&lt;/b&gt;"+"<br><br>"+"&lt;img src=&quot;"+gd5+"&quot;/&gt;"+"<br><br>"+dd5a+"<br><br>"+dd5b+"<br><br>"+dd5c+"<br><br>"+"&lt;table&gt;&lt;tbody&gt;<br>"+"&lt;tr&gt;<br>&lt;td&gt;&lt;img src=&quot;"+td1e+"&quot;/&gt;&lt;/td&gt;"+"&lt;td&gt;&lt;ul class=&quot;button&quot;&gt;&lt;li&gt;&lt;a class=&quot;demo&quot; href=&quot;"+td2e+"&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+"<br><br>"+"&lt;b id=&quot;toc6&quot;&gt;"+jd6+"&lt;/b&gt;"+"<br><br>"+"&lt;img src=&quot;"+gd6+"&quot;/&gt;"+"<br><br>"+dd6a+"<br><br>"+dd6b+"<br><br>"+dd6c+"<br><br>"+"&lt;table&gt;&lt;tbody&gt;<br>"+"&lt;tr&gt;<br>&lt;td&gt;&lt;img src=&quot;"+td1f+"&quot;/&gt;&lt;/td&gt;"+"&lt;td&gt;&lt;ul class=&quot;button&quot;&gt;&lt;li&gt;&lt;a class=&quot;demo&quot; href=&quot;"+td2f+"&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+"<br><br>"+"&lt;b id=&quot;toc7&quot;&gt;"+jd7+"&lt;/b&gt;"+"<br><br>"+"&lt;img src=&quot;"+gd7+"&quot;/&gt;"+"<br><br>"+dd7a+"<br><br>"+dd7b+"<br><br>"+dd7c+"<br><br>"+"&lt;table&gt;&lt;tbody&gt;<br>"+"&lt;tr&gt;<br>&lt;td&gt;&lt;img src=&quot;"+td1g+"&quot;/&gt;&lt;/td&gt;"+"&lt;td&gt;&lt;ul class=&quot;button&quot;&gt;&lt;li&gt;&lt;a class=&quot;demo&quot; href=&quot;"+td2g+"&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+"<br><br>"+"&lt;b id=&quot;toc8&quot;&gt;"+jd8+"&lt;/b&gt;"+"<br><br>"+"&lt;img src=&quot;"+gd8+"&quot;/&gt;"+"<br><br>"+dd8a+"<br><br>"+dd8b+"<br><br>"+dd8c+"<br><br>"+"&lt;table&gt;&lt;tbody&gt;<br>"+"&lt;tr&gt;<br>&lt;td&gt;&lt;img src=&quot;"+td1h+"&quot;/&gt;&lt;/td&gt;"+"&lt;td&gt;&lt;ul class=&quot;button&quot;&gt;&lt;li&gt;&lt;a class=&quot;demo&quot; href=&quot;"+td2h+"&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+"<br><br>"+"&lt;b id=&quot;toc9&quot;&gt;"+jd9+"&lt;/b&gt;"+"<br><br>"+"&lt;img src=&quot;"+gd9+"&quot;/&gt;"+"<br><br>"+dd9a+"<br><br>"+dd9b+"<br><br>"+dd9c+"<br><br>"+"&lt;table&gt;&lt;tbody&gt;<br>"+"&lt;tr&gt;<br>&lt;td&gt;&lt;img src=&quot;"+td1i+"&quot;/&gt;&lt;/td&gt;"+"&lt;td&gt;&lt;ul class=&quot;button&quot;&gt;&lt;li&gt;&lt;a class=&quot;demo&quot; href=&quot;"+td2i+"&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+"<br><br>"+"&lt;b id=&quot;toc10&quot;&gt;"+jd10+"&lt;/b&gt;"+"<br><br>"+"&lt;img src=&quot;"+gd10+"&quot;/&gt;"+"<br><br>"+dd10a+"<br><br>"+dd10b+"<br><br>"+dd10c+"<br><br>"+"&lt;table&gt;&lt;tbody&gt;<br>"+"&lt;tr&gt;<br>&lt;td&gt;&lt;img src=&quot;"+td1j+"&quot;/&gt;&lt;/td&gt;"+"&lt;td&gt;&lt;ul class=&quot;button&quot;&gt;&lt;li&gt;&lt;a class=&quot;demo&quot; href=&quot;"+td2j+"&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+"<br><br>"
+}
+function showhide2() {
+  var x = document.getElementById("Result");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function clearALL() {
+    document.getElementById('gambar').value = '';
+    document.getElementById('deskripsi').value = '';
+    document.getElementById('h2').value = '';
+    document.getElementById('jd1').value = '';
+    document.getElementById('gd1').value = '';
+    document.getElementById('dd1a').value = '';
+    document.getElementById('dd1b').value = '';
+    document.getElementById('dd1c').value = '';
+    document.getElementById('td1a').value = '';
+    document.getElementById('td2a').value = '';
+    document.getElementById('jd2').value = '';
+    document.getElementById('gd2').value = '';
+    document.getElementById('dd2a').value = '';
+    document.getElementById('dd2b').value = '';
+    document.getElementById('dd2c').value = '';
+    document.getElementById('td1b').value = '';
+    document.getElementById('td2b').value = '';
+    document.getElementById('jd3').value = '';
+    document.getElementById('gd3').value = '';
+    document.getElementById('dd3a').value = '';
+    document.getElementById('dd3b').value = '';
+    document.getElementById('dd3c').value = '';
+    document.getElementById('td1c').value = '';
+    document.getElementById('td2c').value = '';
+    document.getElementById('jd4').value = '';
+    document.getElementById('gd4').value = '';
+    document.getElementById('dd4a').value = '';
+    document.getElementById('dd4b').value = '';
+    document.getElementById('dd4c').value = '';
+    document.getElementById('td1d').value = '';
+    document.getElementById('td2d').value = '';
+    document.getElementById('jd5').value = '';
+    document.getElementById('gd5').value = '';
+    document.getElementById('dd5a').value = '';
+    document.getElementById('dd5b').value = '';
+    document.getElementById('dd5c').value = '';
+    document.getElementById('td1e').value = '';
+    document.getElementById('td2e').value = '';
+    document.getElementById('jd6').value = '';
+    document.getElementById('gd6').value = '';
+    document.getElementById('dd6a').value = '';
+    document.getElementById('dd6b').value = '';
+    document.getElementById('dd6c').value = '';
+    document.getElementById('td1f').value = '';
+    document.getElementById('td2f').value = '';
+    document.getElementById('jd7').value = '';
+    document.getElementById('gd7').value = '';
+    document.getElementById('dd7a').value = '';
+    document.getElementById('dd7b').value = '';
+    document.getElementById('dd7c').value = '';
+    document.getElementById('td1g').value = '';
+    document.getElementById('td2g').value = '';
+    document.getElementById('jd8').value = '';
+    document.getElementById('gd8').value = '';
+    document.getElementById('dd8a').value = '';
+    document.getElementById('dd8b').value = '';
+    document.getElementById('dd8c').value = '';
+    document.getElementById('td1h').value = '';
+    document.getElementById('td2h').value = '';
+    document.getElementById('jd9').value = '';
+    document.getElementById('gd9').value = '';
+    document.getElementById('dd9a').value = '';
+    document.getElementById('dd9b').value = '';
+    document.getElementById('dd9c').value = '';
+    document.getElementById('td1i').value = '';
+    document.getElementById('td2i').value = '';
+    document.getElementById('jd10').value = '';
+    document.getElementById('gd10').value = '';
+    document.getElementById('dd10a').value = '';
+    document.getElementById('dd10b').value = '';
+    document.getElementById('dd10c').value = '';
+    document.getElementById('td1j').value = '';
+    document.getElementById('td2j').value = '';
+}   
+function clearG() {
+    document.getElementById('gambar').value = '';
+}
+function clearD() {
+    document.getElementById('deskripsi').value = '';
+}
+function clearH2() {
+    document.getElementById('h2').value = '';
+}
+function clearJD1() {
+    document.getElementById('jd1').value = '';
+}
+function clearGD1() {
+    document.getElementById('gd1').value = '';
+}
+function clearDD1a() {
+    document.getElementById('dd1a').value = '';
+}
+function clearDD1b() {
+    document.getElementById('dd1b').value = '';
+}
+function clearDD1c() {
+    document.getElementById('dd1c').value = '';
+}
+function clearTD1() {
+    document.getElementById('td1a').value = '';
+    document.getElementById('td2a').value = '';
+}
+function clearJD2() {
+    document.getElementById('jd2').value = '';
+}
+function clearGD2() {
+    document.getElementById('gd2').value = '';
+}
+function clearDD2a() {
+    document.getElementById('dd2a').value = '';
+}
+function clearDD2b() {
+    document.getElementById('dd2b').value = '';
+}
+function clearDD2c() {
+    document.getElementById('dd2c').value = '';
+}
+function clearTD2() {
+    document.getElementById('td1b').value = '';
+    document.getElementById('td2b').value = '';
+}
+function clearJD3() {
+    document.getElementById('jd3').value = '';
+}
+function clearGD3() {
+    document.getElementById('gd3').value = '';
+}
+function clearDD3a() {
+    document.getElementById('dd3a').value = '';
+}
+function clearDD3b() {
+    document.getElementById('dd3b').value = '';
+}
+function clearDD3c() {
+    document.getElementById('dd3c').value = '';
+}
+function clearTD3() {
+    document.getElementById('td1c').value = '';
+    document.getElementById('td2c').value = '';
+}
+function clearJD4() {
+    document.getElementById('jd4').value = '';
+}
+function clearGD4() {
+    document.getElementById('gd4').value = '';
+}
+function clearDD4a() {
+    document.getElementById('dd4a').value = '';
+}
+function clearDD4b() {
+    document.getElementById('dd4b').value = '';
+}
+function clearDD4c() {
+    document.getElementById('dd4c').value = '';
+}
+function clearTD4() {
+    document.getElementById('td1d').value = '';
+    document.getElementById('td2d').value = '';
+}
+function clearJD5() {
+    document.getElementById('jd5').value = '';
+}
+function clearGD5() {
+    document.getElementById('gd5').value = '';
+}
+function clearDD5a() {
+    document.getElementById('dd5a').value = '';
+}
+function clearDD5b() {
+    document.getElementById('dd5b').value = '';
+}
+function clearDD5c() {
+    document.getElementById('dd5c').value = '';
+}
+function clearTD5() {
+    document.getElementById('td1e').value = '';
+    document.getElementById('td2e').value = '';
+}
+function clearJD6() {
+    document.getElementById('jd6').value = '';
+}
+function clearGD6() {
+    document.getElementById('gd6').value = '';
+}
+function clearDD6a() {
+    document.getElementById('dd6a').value = '';
+}
+function clearDD6b() {
+    document.getElementById('dd6b').value = '';
+}
+function clearDD6c() {
+    document.getElementById('dd6c').value = '';
+}
+function clearTD6() {
+    document.getElementById('td1f').value = '';
+    document.getElementById('td2f').value = '';
+}
+function clearJD7() {
+    document.getElementById('jd7').value = '';
+}
+function clearGD7() {
+    document.getElementById('gd7').value = '';
+}
+function clearDD7a() {
+    document.getElementById('dd7a').value = '';
+}
+function clearDD7b() {
+    document.getElementById('dd7b').value = '';
+}
+function clearDD7c() {
+    document.getElementById('dd7c').value = '';
+}
+function clearTD7() {
+    document.getElementById('td1g').value = '';
+    document.getElementById('td2g').value = '';
+}
+function clearJD8() {
+    document.getElementById('jd8').value = '';
+}
+function clearGD8() {
+    document.getElementById('gd8').value = '';
+}
+function clearDD8a() {
+    document.getElementById('dd8a').value = '';
+}
+function clearDD8b() {
+    document.getElementById('dd8b').value = '';
+}
+function clearDD8c() {
+    document.getElementById('dd8c').value = '';
+}
+function clearTD8() {
+    document.getElementById('td1h').value = '';
+    document.getElementById('td2h').value = '';
+}
+function clearJD9() {
+    document.getElementById('jd9').value = '';
+}
+function clearGD9() {
+    document.getElementById('gd9').value = '';
+}
+function clearDD9a() {
+    document.getElementById('dd9a').value = '';
+}
+function clearDD9b() {
+    document.getElementById('dd9b').value = '';
+}
+function clearDD9c() {
+    document.getElementById('dd9c').value = '';
+}
+function clearTD9() {
+    document.getElementById('td1i').value = '';
+    document.getElementById('td2i').value = '';
+}
+function clearJD10() {
+    document.getElementById('jd10').value = '';
+}
+function clearGD10() {
+    document.getElementById('gd10').value = '';
+}
+function clearDD10a() {
+    document.getElementById('dd10a').value = '';
+}
+function clearDD10b() {
+    document.getElementById('dd10b').value = '';
+}
+function clearDD10c() {
+    document.getElementById('dd10c').value = '';
+}
+function clearTD10() {
+    document.getElementById('td1j').value = '';
+    document.getElementById('td2j').value = '';
+}
+function copyFormat(containerid) {
+  var range = document.createRange();
+  range.selectNode(containerid); //changed here
+  window.getSelection().removeAllRanges(); 
+  window.getSelection().addRange(range); 
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+  alert("format copied");
+}
+</script>
+</html>
