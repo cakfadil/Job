@@ -1,0 +1,128 @@
+body {
+  background: url("https://2.bp.blogspot.com/-oJbVJ0rQtBo/XZXKUxZuMJI/AAAAAAAAAsI/8G7w84Qo6wU-OwHHoFSSup71TomhZpE1wCLcBGAsYHQ/s1600/ezgif-1-5802343391ca.jpg");
+  padding: 0px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  margin: 30px;
+}
+
+input, button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.main-div, .loggedin-div {
+  width: 400px;
+  margin: 0px auto;
+  margin-top: 150px;
+  padding: 20px;
+  display: none;
+  color: #fff;
+}
+
+.main-div input {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div input:focus {
+  border: 1px solid #777;
+}
+
+.main-div button, .loggedin-div button {
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  cursor: pointer;
+}
+#Result {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 2px solid RGB(98,98,98);
+  border-radius: 5px;
+  background: RGB(226,226,226);
+  font-size: 12px;
+  resize: none;
+  color: RGB(0,0,0);
+}
+.btndefault {
+padding: 3px 14px;
+margin: 4px 0px 4px 0px;
+border: none;
+border-radius: 2px;
+color: RGB(249,230,230);
+cursor: pointer;
+}
+.red {
+background: RGB(204,0,0);
+}
+.green {
+background: RGB(0,89,20);
+}
+.gray {
+background: RGB(98,98,98);
+}
+.blue {
+background: RGB(0,128,255);
+}
+.btndefault:hover {
+background: RGB(0,0,0);
+}
+input, #btn {
+padding: 3px 10px;
+margin: 2px;
+border: none;
+border-radius: 2px;
+background: RGB(226,226,226);
+width: 100%;
+}
+table{width:100%;}
+#btn {background:red;color:white;cursor:pointer;}
+#read {
+background: green;
+color: white;
+}
+#daftar {
+background: red;
+color: white;
+width:100%;
+border:none;
+border-radius:2px;
+padding: 3px 10px;
+margin: 2px;
+font-weight:bold;
+}
+#daftar:after {
+content: "\2193";
+}
+#daftar:before {
+content: "\2193";
+}
+#userdiv {background:#000;border-radius:8px;padding:4px;}
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("https://1.bp.blogspot.com/-dhLHYUa9wBM/XZXGCo1yWLI/AAAAAAAAArU/15p6nks9LA8_1da3Ts2-yWYm_GBUFWzogCLcBGAsYHQ/s900/beautiful-beauty-blurred-background-1386604%2B%25281%2529.jpg");
+}
+.main-div, .loggedin-div {
+  width: 300px;
+  margin-top: 400px;
+  color: #fff;
+}
+}
