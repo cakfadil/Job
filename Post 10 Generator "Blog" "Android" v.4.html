@@ -1,0 +1,812 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Post 10 Generator "Blog" "Android" v.4</title>
+<style> 
+textarea, iframe {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid RGB(98,98,98);
+  border-radius: 5px;
+  background: RGB(226,226,226);
+  font-size: 12px;
+  resize: none;
+  height: 500px;
+}
+textarea {
+padding: 12px;
+}
+iframe {
+padding: 0px;
+margin-top: 5px;
+}
+#Result {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 2px solid RGB(98,98,98);
+  border-radius: 5px;
+  background: RGB(226,226,226);
+  font-size: 12px;
+  resize: none;
+}
+.btndefault {
+padding: 3px 14px;
+margin: 4px 0px 4px 0px;
+border: none;
+border-radius: 2px;
+color: RGB(249,230,230);
+cursor: pointer;
+}
+.red {
+background: RGB(84,18,20);
+}
+.green {
+background: RGB(0,89,20);
+}
+.gray {
+background: RGB(98,98,98);
+}
+.blue {
+background: RGB(0,128,255);
+}
+.btndefault:hover {
+background: RGB(0,0,0);
+}
+input, #btn {
+padding: 3px 10px;
+margin: 2px;
+border: none;
+border-radius: 2px;
+background: RGB(226,226,226);
+width: 100%;
+}
+table{width:100%;}
+#btn {background:red;color:white;cursor:pointer;}
+#read {
+background: #4CAF50;
+color: white;
+}
+body{margin:30px;}
+</style></head>
+<body>
+<span style="font-size:12px;">Copyright © 2019 Post 10 Generator <b>"Blog" "Android"</b> v.4 <b>All Right Reserved</b> By <b>Cakfadil</b>.</span>
+<hr>
+<table><tbody>
+<tr><td colspan="2"><input id="gambar" placeholder="URL Gambar Postingan" type="text" /></td></tr>
+<tr><td colspan="2"><input id="deskripsi" placeholder="Deskripsi Postingan" type="text" /></td></tr>
+<tr><td colspan="2"><input id="h2" placeholder="h2 Judul" type="text" /></td></tr>
+<tr><td colspan="2"><input id="jd1" placeholder="Judul Daftar 1" type="text" /></td></tr>
+<tr><td colspan="2"><input id="gd1" placeholder="Gambar Daftar 1" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd1a" placeholder="Deskripsi 1 Daftar 1" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd1b" placeholder="Deskripsi 2 Daftar 1" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd1c" placeholder="Deskripsi 3 Daftar 1" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td1a" placeholder="URL Gambar Daftar 1" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td2a" placeholder="Link Download Daftar 1" type="text" /></td></tr>
+<tr><td><input id="read" value="Developer" readonly/></td></td><td><input id="developer1" placeholder="Developer Daftar 1" type="text" /></td></tr>
+<tr><td><input id="read" value="Os Minimal" readonly/></td></td><td><input id="osminimal1" placeholder="Os Minimal Daftar 1" type="text" /></td></tr>
+<tr><td><input id="read" value="Ukuran" readonly/></td></td><td><input id="ukuran1" placeholder="Ukuran Daftar 1" type="text" /></td></tr>
+<tr><td><input id="read" value="Rating" readonly/></td></td><td><input id="rating1" placeholder="Rating Daftar 1" type="text" /></td></tr>
+<tr><td><input id="read" value="Download" readonly/></td></td><td><input id="download1" placeholder="Jumlah Download Daftar 1" type="text" /></td></tr>
+<tr><td><input id="read" value="Update" readonly/></td></td><td><input id="update1" placeholder="Update Daftar 1" type="text" /></td></tr>
+<tr><td colspan="2"><input id="jd2" placeholder="Judul Daftar 2" type="text" /></td></tr>
+<tr><td colspan="2"><input id="gd2" placeholder="Gambar Daftar 2" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd2a" placeholder="Deskripsi 1 Daftar 2" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd2b" placeholder="Deskripsi 2 Daftar 2" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd2c" placeholder="Deskripsi 3 Daftar 2" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td1b" placeholder="URL Gambar Daftar 2" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td2b" placeholder="Link Download Daftar 2" type="text" /></td></tr>
+<tr><td><input id="read" value="Developer" readonly/></td></td><td><input id="developer2" placeholder="Developer Daftar 2" type="text" /></td></tr>
+<tr><td><input id="read" value="Os Minimal" readonly/></td></td><td><input id="osminimal2" placeholder="Os Minimal Daftar 2" type="text" /></td></tr>
+<tr><td><input id="read" value="Ukuran" readonly/></td></td><td><input id="ukuran2" placeholder="Ukuran Daftar 2" type="text" /></td></tr>
+<tr><td><input id="read" value="Rating" readonly/></td></td><td><input id="rating2" placeholder="Rating Daftar 2" type="text" /></td></tr>
+<tr><td><input id="read" value="Download" readonly/></td></td><td><input id="download2" placeholder="Jumlah Download Daftar 2" type="text" /></td></tr>
+<tr><td><input id="read" value="Update" readonly/></td></td><td><input id="update2" placeholder="Update Daftar 2" type="text" /></td></tr>
+<tr><td colspan="2"><input id="jd3" placeholder="Judul Daftar 3" type="text" /></td></tr>
+<tr><td colspan="2"><input id="gd3" placeholder="Gambar Daftar 3" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd3a" placeholder="Deskripsi 1 Daftar 3" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd3b" placeholder="Deskripsi 2 Daftar 3" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd3c" placeholder="Deskripsi 3 Daftar 3" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td1c" placeholder="URL Gambar Daftar 3" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td2c" placeholder="Link Download Daftar 3" type="text" /></td></tr>
+<tr><td><input id="read" value="Developer" readonly/></td></td><td><input id="developer3" placeholder="Developer Daftar 3" type="text" /></td></tr>
+<tr><td><input id="read" value="Os Minimal" readonly/></td></td><td><input id="osminimal3" placeholder="Os Minimal Daftar 3" type="text" /></td></tr>
+<tr><td><input id="read" value="Ukuran" readonly/></td></td><td><input id="ukuran3" placeholder="Ukuran Daftar 3" type="text" /></td></tr>
+<tr><td><input id="read" value="Rating" readonly/></td></td><td><input id="rating3" placeholder="Rating Daftar 3" type="text" /></td></tr>
+<tr><td><input id="read" value="Download" readonly/></td></td><td><input id="download3" placeholder="Jumlah Download Daftar 3" type="text" /></td></tr>
+<tr><td><input id="read" value="Update" readonly/></td></td><td><input id="update3" placeholder="Update Daftar 3" type="text" /></td></tr>
+<tr><td colspan="2"><input id="jd4" placeholder="Judul Daftar 4" type="text" /></td></tr>
+<tr><td colspan="2"><input id="gd4" placeholder="Gambar Daftar 4" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd4a" placeholder="Deskripsi 1 Daftar 4" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd4b" placeholder="Deskripsi 2 Daftar 4" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd4c" placeholder="Deskripsi 3 Daftar 4" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td1d" placeholder="URL Gambar Daftar 4" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td2d" placeholder="Link Download Daftar 4" type="text" /></td></tr>
+<tr><td><input id="read" value="Developer" readonly/></td></td><td><input id="developer4" placeholder="Developer Daftar 4" type="text" /></td></tr>
+<tr><td><input id="read" value="Os Minimal" readonly/></td></td><td><input id="osminimal4" placeholder="Os Minimal Daftar 4" type="text" /></td></tr>
+<tr><td><input id="read" value="Ukuran" readonly/></td></td><td><input id="ukuran4" placeholder="Ukuran Daftar 4" type="text" /></td></tr>
+<tr><td><input id="read" value="Rating" readonly/></td></td><td><input id="rating4" placeholder="Rating Daftar 4" type="text" /></td></tr>
+<tr><td><input id="read" value="Download" readonly/></td></td><td><input id="download4" placeholder="Jumlah Download Daftar 4" type="text" /></td></tr>
+<tr><td><input id="read" value="Update" readonly/></td></td><td><input id="update4" placeholder="Update Daftar 4" type="text" /></td></tr>
+<tr><td colspan="2"><input id="jd5" placeholder="Judul Daftar 5" type="text" /></td></tr>
+<tr><td colspan="2"><input id="gd5" placeholder="Gambar Daftar 5" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd5a" placeholder="Deskripsi 1 Daftar 5" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd5b" placeholder="Deskripsi 2 Daftar 5" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd5c" placeholder="Deskripsi 3 Daftar 5" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td1e" placeholder="URL Gambar Daftar 5" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td2e" placeholder="Link Download Daftar 5" type="text" /></td></tr>
+<tr><td><input id="read" value="Developer" readonly/></td></td><td><input id="developer5" placeholder="Developer Daftar 5" type="text" /></td></tr>
+<tr><td><input id="read" value="Os Minimal" readonly/></td></td><td><input id="osminimal5" placeholder="Os Minimal Daftar 5" type="text" /></td></tr>
+<tr><td><input id="read" value="Ukuran" readonly/></td></td><td><input id="ukuran5" placeholder="Ukuran Daftar 5" type="text" /></td></tr>
+<tr><td><input id="read" value="Rating" readonly/></td></td><td><input id="rating5" placeholder="Rating Daftar 5" type="text" /></td></tr>
+<tr><td><input id="read" value="Download" readonly/></td></td><td><input id="download5" placeholder="Jumlah Download Daftar 5" type="text" /></td></tr>
+<tr><td><input id="read" value="Update" readonly/></td></td><td><input id="update5" placeholder="Update Daftar 5" type="text" /></td></tr>
+<tr><td colspan="2"><input id="jd6" placeholder="Judul Daftar 6" type="text" /></td></tr>
+<tr><td colspan="2"><input id="gd6" placeholder="Gambar Daftar 6" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd6a" placeholder="Deskripsi 1 Daftar 6" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd6b" placeholder="Deskripsi 2 Daftar 6" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd6c" placeholder="Deskripsi 3 Daftar 6" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td1f" placeholder="URL Gambar Daftar 6" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td2f" placeholder="Link Download aftar 6" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td2f" placeholder="Link Download " type="text" /></td></tr>
+<tr><td><input id="read" value="Developer" readonly/></td></td><td><input id="developer6" placeholder="Developer Daftar 6" type="text" /></td></tr>
+<tr><td><input id="read" value="Os Minimal" readonly/></td></td><td><input id="osminimal6" placeholder="Os Minimal Daftar 6" type="text" /></td></tr>
+<tr><td><input id="read" value="Ukuran" readonly/></td></td><td><input id="ukuran6" placeholder="Ukuran Daftar 6" type="text" /></td></tr>
+<tr><td><input id="read" value="Rating" readonly/></td></td><td><input id="rating6" placeholder="Rating Daftar 6" type="text" /></td></tr>
+<tr><td><input id="read" value="Download" readonly/></td></td><td><input id="download6" placeholder="Jumlah Download Daftar 6" type="text" /></td></tr>
+<tr><td><input id="read" value="Update" readonly/></td></td><td><input id="update6" placeholder="Update Daftar 6" type="text" /></td></tr>
+<tr><td colspan="2"><input id="jd7" placeholder="Judul Daftar 7" type="text" /></td></tr>
+<tr><td colspan="2"><input id="gd7" placeholder="Gambar Daftar 7" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd7a" placeholder="Deskripsi 1 Daftar 7" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd7b" placeholder="Deskripsi 2 Daftar 7" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd7c" placeholder="Deskripsi 3 Daftar 7" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td1g" placeholder="URL Gambar Daftar 7" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td2g" placeholder="Link Download Daftar 7" type="text" /></td></tr>
+<tr><td><input id="read" value="Developer" readonly/></td></td><td><input id="developer7" placeholder="Developer Daftar 7" type="text" /></td></tr>
+<tr><td><input id="read" value="Os Minimal" readonly/></td></td><td><input id="osminimal7" placeholder="Os Minimal Daftar 7" type="text" /></td></tr>
+<tr><td><input id="read" value="Ukuran" readonly/></td></td><td><input id="ukuran7" placeholder="Ukuran Daftar 7" type="text" /></td></tr>
+<tr><td><input id="read" value="Rating" readonly/></td></td><td><input id="rating7" placeholder="Rating Daftar 7" type="text" /></td></tr>
+<tr><td><input id="read" value="Download" readonly/></td></td><td><input id="download7" placeholder="Jumlah Download Daftar 7" type="text" /></td></tr>
+<tr><td><input id="read" value="Update" readonly/></td></td><td><input id="update7" placeholder="Update Daftar 7" type="text" /></td></tr>
+<tr><td colspan="2"><input id="jd8" placeholder="Judul Daftar 8" type="text" /></td></tr>
+<tr><td colspan="2"><input id="gd8" placeholder="Gambar Daftar 8" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd8a" placeholder="Deskripsi 1 Daftar 8" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd8b" placeholder="Deskripsi 2 Daftar 8" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd8c" placeholder="Deskripsi 3 Daftar 8" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td1h" placeholder="URL Gambar Daftar 8" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td2h" placeholder="Link Download Daftar 8" type="text" /></td></tr>
+<tr><td><input id="read" value="Developer" readonly/></td></td><td><input id="developer8" placeholder="Developer Daftar 8" type="text" /></td></tr>
+<tr><td><input id="read" value="Os Minimal" readonly/></td></td><td><input id="osminimal8" placeholder="Os Minimal Daftar 8" type="text" /></td></tr>
+<tr><td><input id="read" value="Ukuran" readonly/></td></td><td><input id="ukuran8" placeholder="Ukuran Daftar 8" type="text" /></td></tr>
+<tr><td><input id="read" value="Rating" readonly/></td></td><td><input id="rating8" placeholder="Rating Daftar 8" type="text" /></td></tr>
+<tr><td><input id="read" value="Download" readonly/></td></td><td><input id="download8" placeholder="Jumlah Download Daftar 8" type="text" /></td></tr>
+<tr><td><input id="read" value="Update" readonly/></td></td><td><input id="update8" placeholder="Update Daftar 8" type="text" /></td></tr>
+<tr><td colspan="2"><input id="jd9" placeholder="Judul Daftar 9" type="text" /></td></tr>
+<tr><td colspan="2"><input id="gd9" placeholder="Gambar Daftar 9" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd9a" placeholder="Deskripsi 1 Daftar 9" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd9b" placeholder="Deskripsi 2 Daftar 9" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd9c" placeholder="Deskripsi 3 Daftar 9" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td1i" placeholder="URL Gambar Daftar 9" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td2i" placeholder="Link Download Daftar 9" type="text" /></td></tr>
+<tr><td><input id="read" value="Developer" readonly/></td></td><td><input id="developer9" placeholder="Developer Daftar 9" type="text" /></td></tr>
+<tr><td><input id="read" value="Os Minimal" readonly/></td></td><td><input id="osminimal9" placeholder="Os Minimal Daftar 9" type="text" /></td></tr>
+<tr><td><input id="read" value="Ukuran" readonly/></td></td><td><input id="ukuran9" placeholder="Ukuran Daftar 9" type="text" /></td></tr>
+<tr><td><input id="read" value="Rating" readonly/></td></td><td><input id="rating9" placeholder="Rating Daftar 9" type="text" /></td></tr>
+<tr><td><input id="read" value="Download" readonly/></td></td><td><input id="download9" placeholder="Jumlah Download Daftar 9" type="text" /></td></tr>
+<tr><td><input id="read" value="Update" readonly/></td></td><td><input id="update9" placeholder="Update Daftar 9" type="text" /></td></tr>
+<tr><td colspan="2"><input id="jd10" placeholder="Judul Daftar 10" type="text" /></td></tr>
+<tr><td colspan="2"><input id="gd10" placeholder="Gambar Daftar 10" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd10a" placeholder="Deskripsi 1 Daftar 10" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd10b" placeholder="Deskripsi 2 Daftar 10" type="text" /></td></tr>
+<tr><td colspan="2"><input id="dd10c" placeholder="Deskripsi 3 Daftar 10" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td1j" placeholder="URL Gambar Daftar 10" type="text" /></td></tr>
+<tr><td colspan="2"><input id="td2j" placeholder="Link Download Daftar 10" type="text" /></td></tr>
+<tr><td><input id="read" value="Developer" readonly/></td></td><td><input id="developer10" placeholder="Developer Daftar 10" type="text" /></td></tr>
+<tr><td><input id="read" value="Os Minimal" readonly/></td></td><td><input id="osminimal10" placeholder="Os Minimal Daftar 10" type="text" /></td></tr>
+<tr><td><input id="read" value="Ukuran" readonly/></td></td><td><input id="ukuran10" placeholder="Ukuran Daftar 10" type="text" /></td></tr>
+<tr><td><input id="read" value="Rating" readonly/></td></td><td><input id="rating10" placeholder="Rating Daftar 10" type="text" /></td></tr>
+<tr><td><input id="read" value="Download" readonly/></td></td><td><input id="download10" placeholder="Jumlah Download Daftar 10" type="text" /></td></tr>
+<tr><td><input id="read" value="Update" readonly/></td></td><td><input id="update10" placeholder="Update Daftar 10" type="text" /></td></tr>
+<tr><td style="text-align:center" colspan="3"><button id="btn" onclick="clearALL()">Clear All</button></td></tr>
+</tbody></table>
+<center>
+Click "<b>Generate</b>"<br>
+<button class="btndefault green" onclick="Generate()">Generate</button> <button class="btndefault blue" onclick="showhide2()">show/hide</button> <button class="btndefault gray" onclick="copyFormat(Result)">Copy</button></center>
+<div id="Result">
+</div>
+</body>
+<script type="text/javascript">
+function Generate() {
+  var gambar = document.getElementById("gambar").value;
+  var deskripsi = document.getElementById("deskripsi").value;
+  var h2 = document.getElementById("h2").value;
+  var jd1 = document.getElementById("jd1").value;
+  var gd1 = document.getElementById("gd1").value;
+  var dd1a = document.getElementById("dd1a").value;
+  var dd1b = document.getElementById("dd1b").value;
+  var dd1c = document.getElementById("dd1c").value;
+  var td1a = document.getElementById("td1a").value;
+  var td2a = document.getElementById("td2a").value;
+  var developer1 = document.getElementById("developer1").value;
+  var osminimal1 = document.getElementById("osminimal1").value;
+  var ukuran1 = document.getElementById("ukuran1").value;
+  var rating1 = document.getElementById("rating1").value;
+  var download1 = document.getElementById("download1").value;
+  var update1 = document.getElementById("update1").value;
+  var jd2 = document.getElementById("jd2").value;
+  var gd2 = document.getElementById("gd2").value;
+  var dd2a = document.getElementById("dd2a").value;
+  var dd2b = document.getElementById("dd2b").value;
+  var dd2c = document.getElementById("dd2c").value;
+  var td1b = document.getElementById("td1b").value;
+  var td2b = document.getElementById("td2b").value;
+  var developer2 = document.getElementById("developer2").value;
+  var osminimal2 = document.getElementById("osminimal2").value;
+  var ukuran2 = document.getElementById("ukuran2").value;
+  var rating2 = document.getElementById("rating2").value;
+  var download2 = document.getElementById("download2").value;
+  var update2 = document.getElementById("update2").value;
+  var jd3 = document.getElementById("jd3").value;
+  var gd3 = document.getElementById("gd3").value;
+  var dd3a = document.getElementById("dd3a").value;
+  var dd3b = document.getElementById("dd3b").value;
+  var dd3c = document.getElementById("dd3c").value;
+  var td1c = document.getElementById("td1c").value;
+  var td2c = document.getElementById("td2c").value;
+  var developer3 = document.getElementById("developer3").value;
+  var osminimal3 = document.getElementById("osminimal3").value;
+  var ukuran3 = document.getElementById("ukuran3").value;
+  var rating3 = document.getElementById("rating3").value;
+  var download3 = document.getElementById("download3").value;
+  var update3 = document.getElementById("update3").value;
+  var jd4 = document.getElementById("jd4").value;
+  var gd4 = document.getElementById("gd4").value;
+  var dd4a = document.getElementById("dd4a").value;
+  var dd4b = document.getElementById("dd4b").value;
+  var dd4c = document.getElementById("dd4c").value;
+  var td1d = document.getElementById("td1d").value;
+  var td2d = document.getElementById("td2d").value;
+  var developer4 = document.getElementById("developer4").value;
+  var osminimal4 = document.getElementById("osminimal4").value;
+  var ukuran4 = document.getElementById("ukuran4").value;
+  var rating4 = document.getElementById("rating4").value;
+  var download4 = document.getElementById("download4").value;
+  var update4 = document.getElementById("update4").value;
+  var jd5 = document.getElementById("jd5").value;
+  var gd5 = document.getElementById("gd5").value;
+  var dd5a = document.getElementById("dd5a").value;
+  var dd5b = document.getElementById("dd5b").value;
+  var dd5c = document.getElementById("dd5c").value;
+  var td1e = document.getElementById("td1e").value;
+  var td2e = document.getElementById("td2e").value;
+  var developer5 = document.getElementById("developer5").value;
+  var osminimal5 = document.getElementById("osminimal5").value;
+  var ukuran5 = document.getElementById("ukuran5").value;
+  var rating5 = document.getElementById("rating5").value;
+  var download5 = document.getElementById("download5").value;
+  var update5 = document.getElementById("update5").value;
+  var jd6 = document.getElementById("jd6").value;
+  var gd6 = document.getElementById("gd6").value;
+  var dd6a = document.getElementById("dd6a").value;
+  var dd6b = document.getElementById("dd6b").value;
+  var dd6c = document.getElementById("dd6c").value;
+  var td1f = document.getElementById("td1f").value;
+  var td2f = document.getElementById("td2f").value;
+  var developer6 = document.getElementById("developer6").value;
+  var osminimal6 = document.getElementById("osminimal6").value;
+  var ukuran6 = document.getElementById("ukuran6").value;
+  var rating6 = document.getElementById("rating6").value;
+  var download6 = document.getElementById("download6").value;
+  var update6 = document.getElementById("update6").value;
+  var jd7 = document.getElementById("jd7").value;
+  var gd7 = document.getElementById("gd7").value;
+  var dd7a = document.getElementById("dd7a").value;
+  var dd7b = document.getElementById("dd7b").value;
+  var dd7c = document.getElementById("dd7c").value;
+  var td1g = document.getElementById("td1g").value;
+  var td2g = document.getElementById("td2g").value;
+  var developer7 = document.getElementById("developer7").value;
+  var osminimal7 = document.getElementById("osminimal7").value;
+  var ukuran7 = document.getElementById("ukuran7").value;
+  var rating7 = document.getElementById("rating7").value;
+  var download7 = document.getElementById("download7").value;
+  var update7 = document.getElementById("update7").value;
+  var jd8 = document.getElementById("jd8").value;
+  var gd8 = document.getElementById("gd8").value;
+  var dd8a = document.getElementById("dd8a").value;
+  var dd8b = document.getElementById("dd8b").value;
+  var dd8c = document.getElementById("dd8c").value;
+  var td1h = document.getElementById("td1h").value;
+  var td2h = document.getElementById("td2h").value;
+  var developer8 = document.getElementById("developer8").value;
+  var osminimal8 = document.getElementById("osminimal8").value;
+  var ukuran8 = document.getElementById("ukuran8").value;
+  var rating8 = document.getElementById("rating8").value;
+  var download8 = document.getElementById("download8").value;
+  var update8 = document.getElementById("update8").value;
+  var jd9 = document.getElementById("jd9").value;
+  var gd9 = document.getElementById("gd9").value;
+  var dd9a = document.getElementById("dd9a").value;
+  var dd9b = document.getElementById("dd9b").value;
+  var dd9c = document.getElementById("dd9c").value;
+  var td1i = document.getElementById("td1i").value;
+  var td2i = document.getElementById("td2i").value;
+  var developer9 = document.getElementById("developer9").value;
+  var osminimal9 = document.getElementById("osminimal9").value;
+  var ukuran9 = document.getElementById("ukuran9").value;
+  var rating9 = document.getElementById("rating9").value;
+  var download9 = document.getElementById("download9").value;
+  var update9 = document.getElementById("update9").value;
+  var jd10 = document.getElementById("jd10").value;
+  var gd10 = document.getElementById("gd10").value;
+  var dd10a = document.getElementById("dd10a").value;
+  var dd10b = document.getElementById("dd10b").value;
+  var dd10c = document.getElementById("dd10c").value;
+  var td1j = document.getElementById("td1j").value;
+  var td2j = document.getElementById("td2j").value;
+  var developer10 = document.getElementById("developer10").value;
+  var osminimal10 = document.getElementById("osminimal10").value;
+  var ukuran10 = document.getElementById("ukuran10").value;
+  var rating10 = document.getElementById("rating10").value;
+  var download10 = document.getElementById("download10").value;
+  var update10 = document.getElementById("update10").value;
+  document.getElementById("Result").innerHTML = "&lt;img src=&quot;"+gambar+"&quot;/&gt;"+
+  "<br><br>"+deskripsi+
+  "<br><br>"+"&lt;div class=&quot;toc&quot;&gt;&lt;input type=&quot;checkbox&quot; role=&quot;button&quot; id=&quot;toctoggle&quot; class=&quot;toctoggle&quot;&gt;&lt;div class=&quot;toctitle&quot;&gt;&lt;h2&gt;Daftar isi&lt;/h2&gt; &lt;span class=&quot;toctogglespan&quot;&gt;&lt;label class=&quot;toctogglelabel&quot; for=&quot;toctoggle&quot;&gt;&lt;/label&gt;&lt;/span&gt;&lt;/div&gt;"+"<br>"+"&lt;ul&gt;"+"<br>"+"&lt;li&gt;1. &lt;a href=&quot;#toc1&quot; title=&quot;"+jd1+"&quot;&gt;"+jd1+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;2. &lt;a href=&quot;#toc2&quot; title=&quot;"+jd2+"&quot;&gt;"+jd2+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;3. &lt;a href=&quot;#toc3&quot; title=&quot;"+jd3+"&quot;&gt;"+jd3+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;4. &lt;a href=&quot;#toc4&quot; title=&quot;"+jd4+"&quot;&gt;"+jd4+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;5. &lt;a href=&quot;#toc5&quot; title=&quot;"+jd5+"&quot;&gt;"+jd5+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;6. &lt;a href=&quot;#toc6&quot; title=&quot;"+jd6+"&quot;&gt;"+jd6+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;7. &lt;a href=&quot;#toc7&quot; title=&quot;"+jd7+"&quot;&gt;"+jd7+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;8. &lt;a href=&quot;#toc8&quot; title=&quot;"+jd8+"&quot;&gt;"+jd8+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;9. &lt;a href=&quot;#toc9&quot; title=&quot;"+jd9+"&quot;&gt;"+jd9+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;li&gt;10. &lt;a href=&quot;#toc10&quot; title=&quot;"+jd10+"&quot;&gt;"+jd10+"&lt;/a&gt;&lt;/li&gt;"+"<br>"+"&lt;/ul&gt;"+"<br>"+"&lt;/div&gt;"+
+  "<br><br>"+"&lt;h2&gt;"+h2+"&lt;/h2&gt;"+
+  "<br><br>"+"&lt;b id=&quot;toc1&quot;&gt;"+jd1+"&lt;/b&gt;"+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+gd1+"&quot;/&gt;&lt;/center&gt;"+
+  "<br><br>"+dd1a+
+  "<br><br>"+dd1b+
+  "<br><br>"+dd1c+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+td1a+"&quot; width=&quot;200px&quot; /&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;center&gt;&lt;a href=&quot;"+td2a+"&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;btn&quot;&gt;Download&lt;/button&gt;&lt;/a&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;table id=&quot;tbl&quot;&gt;&lt;tbody&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;th colspan=&quot;2&quot;&gt;Detail&lt;/th&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Developer&lt;/td&gt;&lt;td&gt;"+developer1+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Os Minimal&lt;/td&gt;&lt;td&gt;"+osminimal1+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Ukuran&lt;/td&gt;&lt;td&gt;"+ukuran1+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Rating&lt;/td&gt;&lt;td&gt;"+rating1+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Download&lt;/td&gt;&lt;td&gt;"+download1+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;"+update1+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+
+  "<br><br>"+"&lt;b id=&quot;toc2&quot;&gt;"+jd2+"&lt;/b&gt;"+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+gd2+"&quot;/&gt;&lt;/center&gt;"+
+  "<br><br>"+dd2a+
+  "<br><br>"+dd2b+
+  "<br><br>"+dd2c+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+td1b+"&quot; width=&quot;200px&quot; /&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;center&gt;&lt;a href=&quot;"+td2b+"&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;btn&quot;&gt;Download&lt;/button&gt;&lt;/a&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;table id=&quot;tbl&quot;&gt;&lt;tbody&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;th colspan=&quot;2&quot;&gt;Detail&lt;/th&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Developer&lt;/td&gt;&lt;td&gt;"+developer2+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Os Minimal&lt;/td&gt;&lt;td&gt;"+osminimal2+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Ukuran&lt;/td&gt;&lt;td&gt;"+ukuran2+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Rating&lt;/td&gt;&lt;td&gt;"+rating2+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Download&lt;/td&gt;&lt;td&gt;"+download2+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;"+update2+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+
+  "<br><br>"+"&lt;b id=&quot;toc2&quot;&gt;"+jd3+"&lt;/b&gt;"+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+gd3+"&quot;/&gt;&lt;/center&gt;"+
+  "<br><br>"+dd3a+
+  "<br><br>"+dd3b+
+  "<br><br>"+dd3c+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+td1c+"&quot; width=&quot;200px&quot; /&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;center&gt;&lt;a href=&quot;"+td2c+"&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;btn&quot;&gt;Download&lt;/button&gt;&lt;/a&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;table id=&quot;tbl&quot;&gt;&lt;tbody&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;th colspan=&quot;2&quot;&gt;Detail&lt;/th&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Developer&lt;/td&gt;&lt;td&gt;"+developer3+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Os Minimal&lt;/td&gt;&lt;td&gt;"+osminimal3+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Ukuran&lt;/td&gt;&lt;td&gt;"+ukuran3+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Rating&lt;/td&gt;&lt;td&gt;"+rating3+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Download&lt;/td&gt;&lt;td&gt;"+download3+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;"+update3+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+
+  "<br><br>"+"&lt;b id=&quot;toc2&quot;&gt;"+jd4+"&lt;/b&gt;"+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+gd4+"&quot;/&gt;&lt;/center&gt;"+
+  "<br><br>"+dd4a+
+  "<br><br>"+dd4b+
+  "<br><br>"+dd4c+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+td1d+"&quot; width=&quot;200px&quot; /&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;center&gt;&lt;a href=&quot;"+td2d+"&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;btn&quot;&gt;Download&lt;/button&gt;&lt;/a&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;table id=&quot;tbl&quot;&gt;&lt;tbody&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;th colspan=&quot;2&quot;&gt;Detail&lt;/th&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Developer&lt;/td&gt;&lt;td&gt;"+developer4+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Os Minimal&lt;/td&gt;&lt;td&gt;"+osminimal4+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Ukuran&lt;/td&gt;&lt;td&gt;"+ukuran4+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Rating&lt;/td&gt;&lt;td&gt;"+rating4+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Download&lt;/td&gt;&lt;td&gt;"+download4+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;"+update4+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+
+  "<br><br>"+"&lt;b id=&quot;toc1&quot;&gt;"+jd5+"&lt;/b&gt;"+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+gd5+"&quot;/&gt;&lt;/center&gt;"+
+  "<br><br>"+dd5a+
+  "<br><br>"+dd5b+
+  "<br><br>"+dd5c+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+td1e+"&quot; width=&quot;200px&quot; /&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;center&gt;&lt;a href=&quot;"+td2e+"&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;btn&quot;&gt;Download&lt;/button&gt;&lt;/a&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;table id=&quot;tbl&quot;&gt;&lt;tbody&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;th colspan=&quot;2&quot;&gt;Detail&lt;/th&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Developer&lt;/td&gt;&lt;td&gt;"+developer5+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Os Minimal&lt;/td&gt;&lt;td&gt;"+osminimal5+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Ukuran&lt;/td&gt;&lt;td&gt;"+ukuran5+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Rating&lt;/td&gt;&lt;td&gt;"+rating5+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Download&lt;/td&gt;&lt;td&gt;"+download5+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;"+update5+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+
+  "<br><br>"+"&lt;b id=&quot;toc1&quot;&gt;"+jd6+"&lt;/b&gt;"+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+gd6+"&quot;/&gt;&lt;/center&gt;"+
+  "<br><br>"+dd6a+
+  "<br><br>"+dd6b+
+  "<br><br>"+dd6c+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+td1f+"&quot; width=&quot;200px&quot; /&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;center&gt;&lt;a href=&quot;"+td2f+"&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;btn&quot;&gt;Download&lt;/button&gt;&lt;/a&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;table id=&quot;tbl&quot;&gt;&lt;tbody&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;th colspan=&quot;2&quot;&gt;Detail&lt;/th&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Developer&lt;/td&gt;&lt;td&gt;"+developer6+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Os Minimal&lt;/td&gt;&lt;td&gt;"+osminimal6+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Ukuran&lt;/td&gt;&lt;td&gt;"+ukuran6+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Rating&lt;/td&gt;&lt;td&gt;"+rating6+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Download&lt;/td&gt;&lt;td&gt;"+download6+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;"+update6+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+
+  "<br><br>"+"&lt;b id=&quot;toc1&quot;&gt;"+jd7+"&lt;/b&gt;"+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+gd7+"&quot;/&gt;&lt;/center&gt;"+
+  "<br><br>"+dd7a+
+  "<br><br>"+dd7b+
+  "<br><br>"+dd7c+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+td1g+"&quot; width=&quot;200px&quot; /&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;center&gt;&lt;a href=&quot;"+td2g+"&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;btn&quot;&gt;Download&lt;/button&gt;&lt;/a&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;table id=&quot;tbl&quot;&gt;&lt;tbody&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;th colspan=&quot;2&quot;&gt;Detail&lt;/th&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Developer&lt;/td&gt;&lt;td&gt;"+developer7+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Os Minimal&lt;/td&gt;&lt;td&gt;"+osminimal7+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Ukuran&lt;/td&gt;&lt;td&gt;"+ukuran7+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Rating&lt;/td&gt;&lt;td&gt;"+rating7+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Download&lt;/td&gt;&lt;td&gt;"+download7+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;"+update7+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+
+  "<br><br>"+"&lt;b id=&quot;toc1&quot;&gt;"+jd8+"&lt;/b&gt;"+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+gd8+"&quot;/&gt;&lt;/center&gt;"+
+  "<br><br>"+dd8a+
+  "<br><br>"+dd8b+
+  "<br><br>"+dd8c+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+td1h+"&quot; width=&quot;200px&quot; /&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;center&gt;&lt;a href=&quot;"+td2h+"&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;btn&quot;&gt;Download&lt;/button&gt;&lt;/a&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;table id=&quot;tbl&quot;&gt;&lt;tbody&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;th colspan=&quot;2&quot;&gt;Detail&lt;/th&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Developer&lt;/td&gt;&lt;td&gt;"+developer8+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Os Minimal&lt;/td&gt;&lt;td&gt;"+osminimal8+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Ukuran&lt;/td&gt;&lt;td&gt;"+ukuran8+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Rating&lt;/td&gt;&lt;td&gt;"+rating8+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Download&lt;/td&gt;&lt;td&gt;"+download8+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;"+update8+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+
+  "<br><br>"+"&lt;b id=&quot;toc1&quot;&gt;"+jd9+"&lt;/b&gt;"+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+gd9+"&quot;/&gt;&lt;/center&gt;"+
+  "<br><br>"+dd9a+
+  "<br><br>"+dd9b+
+  "<br><br>"+dd9c+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+td1i+"&quot; width=&quot;200px&quot; /&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;center&gt;&lt;a href=&quot;"+td2i+"&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;btn&quot;&gt;Download&lt;/button&gt;&lt;/a&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;table id=&quot;tbl&quot;&gt;&lt;tbody&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;th colspan=&quot;2&quot;&gt;Detail&lt;/th&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Developer&lt;/td&gt;&lt;td&gt;"+developer9+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Os Minimal&lt;/td&gt;&lt;td&gt;"+osminimal9+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Ukuran&lt;/td&gt;&lt;td&gt;"+ukuran9+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Rating&lt;/td&gt;&lt;td&gt;"+rating9+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Download&lt;/td&gt;&lt;td&gt;"+download9+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;"+update9+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+
+  "<br><br>"+"&lt;b id=&quot;toc1&quot;&gt;"+jd10+"&lt;/b&gt;"+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+gd10+"&quot;/&gt;&lt;/center&gt;"+
+  "<br><br>"+dd10a+
+  "<br><br>"+dd10b+
+  "<br><br>"+dd10c+
+  "<br><br>"+"&lt;center&gt;&lt;img src=&quot;"+td1j+"&quot; width=&quot;200px&quot; /&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;center&gt;&lt;a href=&quot;"+td2j+"&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;btn&quot;&gt;Download&lt;/button&gt;&lt;/a&gt;&lt;/center&gt;"+
+  "<br>"+"&lt;table id=&quot;tbl&quot;&gt;&lt;tbody&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;th colspan=&quot;2&quot;&gt;Detail&lt;/th&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Developer&lt;/td&gt;&lt;td&gt;"+developer10+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Os Minimal&lt;/td&gt;&lt;td&gt;"+osminimal10+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Ukuran&lt;/td&gt;&lt;td&gt;"+ukuran10+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Rating&lt;/td&gt;&lt;td&gt;"+rating10+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Download&lt;/td&gt;&lt;td&gt;"+download10+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;tr&gt;"+
+  "<br>"+"&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;"+update10+"&lt;/td&gt;"+
+  "<br>"+"&lt;/tr&gt;"+
+  "<br>"+"&lt;/tbody&gt;&lt;/table&gt;"
+}
+
+function showhide2() {
+  var x = document.getElementById("Result");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function clearALL() {
+    document.getElementById('gambar').value = '';
+    document.getElementById('deskripsi').value = '';
+    document.getElementById('h2').value = '';
+    document.getElementById('jd1').value = '';
+    document.getElementById('gd1').value = '';
+    document.getElementById('dd1a').value = '';
+    document.getElementById('dd1b').value = '';
+    document.getElementById('dd1c').value = '';
+    document.getElementById('td1a').value = '';
+    document.getElementById('td2a').value = '';
+    document.getElementById('developer1').value = '';
+    document.getElementById('osminimal1').value = '';
+    document.getElementById('ukuran1').value = '';
+    document.getElementById('rating1').value = '';
+    document.getElementById('download1').value = '';
+    document.getElementById('update1').value = '';
+    document.getElementById('jd2').value = '';
+    document.getElementById('gd2').value = '';
+    document.getElementById('dd2a').value = '';
+    document.getElementById('dd2b').value = '';
+    document.getElementById('dd2c').value = '';
+    document.getElementById('td1b').value = '';
+    document.getElementById('td2b').value = '';
+    document.getElementById('developer2').value = '';
+    document.getElementById('osminimal2').value = '';
+    document.getElementById('ukuran2').value = '';
+    document.getElementById('rating2').value = '';
+    document.getElementById('download2').value = '';
+    document.getElementById('update2').value = '';
+    document.getElementById('jd3').value = '';
+    document.getElementById('gd3').value = '';
+    document.getElementById('dd3a').value = '';
+    document.getElementById('dd3b').value = '';
+    document.getElementById('dd3c').value = '';
+    document.getElementById('td1c').value = '';
+    document.getElementById('td2c').value = '';
+    document.getElementById('developer3').value = '';
+    document.getElementById('osminimal3').value = '';
+    document.getElementById('ukuran3').value = '';
+    document.getElementById('rating3').value = '';
+    document.getElementById('download3').value = '';
+    document.getElementById('update3').value = '';
+    document.getElementById('jd4').value = '';
+    document.getElementById('gd4').value = '';
+    document.getElementById('dd4a').value = '';
+    document.getElementById('dd4b').value = '';
+    document.getElementById('dd4c').value = '';
+    document.getElementById('td1d').value = '';
+    document.getElementById('td2d').value = '';
+    document.getElementById('developer4').value = '';
+    document.getElementById('osminimal4').value = '';
+    document.getElementById('ukuran4').value = '';
+    document.getElementById('rating4').value = '';
+    document.getElementById('download4').value = '';
+    document.getElementById('update4').value = '';
+    document.getElementById('jd5').value = '';
+    document.getElementById('gd5').value = '';
+    document.getElementById('dd5a').value = '';
+    document.getElementById('dd5b').value = '';
+    document.getElementById('dd5c').value = '';
+    document.getElementById('td1e').value = '';
+    document.getElementById('td2e').value = '';
+    document.getElementById('developer5').value = '';
+    document.getElementById('osminimal5').value = '';
+    document.getElementById('ukuran5').value = '';
+    document.getElementById('rating5').value = '';
+    document.getElementById('download5').value = '';
+    document.getElementById('update5').value = '';
+    document.getElementById('jd6').value = '';
+    document.getElementById('gd6').value = '';
+    document.getElementById('dd6a').value = '';
+    document.getElementById('dd6b').value = '';
+    document.getElementById('dd6c').value = '';
+    document.getElementById('td1f').value = '';
+    document.getElementById('td2f').value = '';
+    document.getElementById('developer6').value = '';
+    document.getElementById('osminimal6').value = '';
+    document.getElementById('ukuran6').value = '';
+    document.getElementById('rating6').value = '';
+    document.getElementById('download6').value = '';
+    document.getElementById('update6').value = '';
+    document.getElementById('jd7').value = '';
+    document.getElementById('gd7').value = '';
+    document.getElementById('dd7a').value = '';
+    document.getElementById('dd7b').value = '';
+    document.getElementById('dd7c').value = '';
+    document.getElementById('td1g').value = '';
+    document.getElementById('td2g').value = '';
+    document.getElementById('developer7').value = '';
+    document.getElementById('osminimal7').value = '';
+    document.getElementById('ukuran7').value = '';
+    document.getElementById('rating7').value = '';
+    document.getElementById('download7').value = '';
+    document.getElementById('update7').value = '';
+    document.getElementById('jd8').value = '';
+    document.getElementById('gd8').value = '';
+    document.getElementById('dd8a').value = '';
+    document.getElementById('dd8b').value = '';
+    document.getElementById('dd8c').value = '';
+    document.getElementById('td1h').value = '';
+    document.getElementById('td2h').value = '';
+    document.getElementById('developer8').value = '';
+    document.getElementById('osminimal8').value = '';
+    document.getElementById('ukuran8').value = '';
+    document.getElementById('rating8').value = '';
+    document.getElementById('download8').value = '';
+    document.getElementById('update8').value = '';
+    document.getElementById('jd9').value = '';
+    document.getElementById('gd9').value = '';
+    document.getElementById('dd9a').value = '';
+    document.getElementById('dd9b').value = '';
+    document.getElementById('dd9c').value = '';
+    document.getElementById('td1i').value = '';
+    document.getElementById('td2i').value = '';
+    document.getElementById('developer9').value = '';
+    document.getElementById('osminimal9').value = '';
+    document.getElementById('ukuran9').value = '';
+    document.getElementById('rating9').value = '';
+    document.getElementById('download9').value = '';
+    document.getElementById('update9').value = '';
+    document.getElementById('jd10').value = '';
+    document.getElementById('gd10').value = '';
+    document.getElementById('dd10a').value = '';
+    document.getElementById('dd10b').value = '';
+    document.getElementById('dd10c').value = '';
+    document.getElementById('td1j').value = '';
+    document.getElementById('td2j').value = '';
+    document.getElementById('developer10').value = '';
+    document.getElementById('osminimal10').value = '';
+    document.getElementById('ukuran10').value = '';
+    document.getElementById('rating10').value = '';
+    document.getElementById('download10').value = '';
+    document.getElementById('update10').value = '';
+}   
+function copyFormat(containerid) {
+  var range = document.createRange();
+  range.selectNode(containerid); //changed here
+  window.getSelection().removeAllRanges(); 
+  window.getSelection().addRange(range); 
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+  alert("format copied");
+}
+</script>
+</html>
