@@ -2,18 +2,18 @@
 <head>
   <title>Post Generator "Blog" "Android" v.4</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://raw.githack.com/cakfadil/Job/master/Post Generator Blog Android v.4.css" />
 </head>
 <body>
-
-  <div id="logindiv" class="main-div">
-    <center><b style="font-size:24px;">Login</b></center>
-    <input type="email" placeholder="Email..." id="email_field" />
-    <input type="password" placeholder="Password..." id="password_field" />
-    <button onclick="login()">Login to Account</button>
-  </div>
-  <div id="userdiv">
-<span style="font-size:12px;color:#fff;">Copyright © 2019 Post Generator <b>"Blog"</b> <b>"Android"</b> v.4 <b>All Right Reserved</b> By <b>Cakfadil</b>.<br>
+<div id="logindiv" class="main-div">
+<center><b style="font-size:24px;">Login</b></center>
+<input type="email" placeholder="Email..." id="email_field" />
+<input type="password" placeholder="Password..." id="password_field" />
+<button onclick="login()">Login to Account</button>
+</div>
+<div id="userdiv">
+<span style="font-size:12px;color:#fff;">Copyright © 2019 Post Generator <b>"Blog"</b> <b>"Android"</b> v.4 <b>All Right Reserved</b> By <b>Cakfadil</b></span>.<br>
 <span id="user_generator"></span> <button class="btndefault red" onclick="logout()">Logout</button>
 <hr>
 <table><tbody>
@@ -42,8 +42,8 @@
 <tr><td><input id="read" value="Os Minimal" readonly/></td><td><input id="osminimal1" placeholder="Os Minimal" type="text" /></td></tr>
 <tr><td><input id="read" value="Ukuran" readonly/></td><td><input id="ukuran1" placeholder="Ukuran" type="text" /></td></tr>
 <tr><td><input id="read" value="Rating" readonly/></td><td><input id="rating1" placeholder="Rating" type="text" /></td></tr>
-<tr><td><input id="read" value="Download" readonly/></td></td><td><input id="download1" placeholder="Jumlah Download" type="text" /></td></tr>
-<tr><td><input id="read" value="Update" readonly/></td></td><td><input id="update1" placeholder="Update" type="text" /></td></tr>
+<tr><td><input id="read" value="Download" readonly/></td><td><input id="download1" placeholder="Jumlah Download" type="text" /></td></tr>
+<tr><td><input id="read" value="Update" readonly/></td><td><input id="update1" placeholder="Update" type="text" /></td></tr>
 <tr><td colspan="2"><button id="Aplikasi"> Aplikasi Ke 2</button></td></tr>
 <tr><td><input id="read" value="Judul" readonly/></td><td><input id="jd2" placeholder="Judul" type="text" /></td></tr>
 <tr><td><input id="read" value="URL Gambar" readonly/></td><td><input id="gd2" placeholder="Gambar" type="text" /></td></tr>
@@ -260,10 +260,10 @@
 <tr><td><input id="read" value="Rating" readonly/></td><td><input id="rating10" placeholder="Rating" type="text" /></td></tr>
 <tr><td><input id="read" value="Download" readonly/></td><td><input id="download10" placeholder="Jumlah Download" type="text" /></td></tr>
 <tr><td><input id="read" value="Update" readonly/></td><td><input id="update10" placeholder="Update" type="text" /></td></tr>
-<tr><td><input id="read" value="URL Halaman 1" readonly/></td></td><td><input id="halaman1" placeholder="URL Halaman 1" type="text" /></td></tr>
-<tr><td><input id="read" value="URL Halaman 2" readonly/></td></td><td><input id="halaman2" placeholder="URL Halaman 2" type="text" /></td></tr>
-<tr><td><input id="read" value="URL Halaman 3" readonly/></td></td><td><input id="halaman3" placeholder="URL Halaman 3" type="text" /></td></tr>
-<tr><td><input id="read" value="URL Halaman Selengkapnya" readonly/></td></td><td><input id="halamanfull" placeholder="URL Halaman Selengkapnya" type="text" /></td></tr>
+<tr><td><input id="read" value="URL Halaman 1" readonly/></td><td><input id="halaman1" placeholder="URL Halaman 1" type="text" /></td></tr>
+<tr><td><input id="read" value="URL Halaman 2" readonly/></td><td><input id="halaman2" placeholder="URL Halaman 2" type="text" /></td></tr>
+<tr><td><input id="read" value="URL Halaman 3" readonly/></td><td><input id="halaman3" placeholder="URL Halaman 3" type="text" /></td></tr>
+<tr><td><input id="read" value="URL Halaman Selengkapnya" readonly/></td><td><input id="halamanfull" placeholder="URL Halaman Selengkapnya" type="text" /></td></tr>
 <tr><td style="text-align:center" colspan="3"><button id="btn" onclick="clearALL()">Clear All</button></td></tr>
 </tbody></table>
 <center>
@@ -289,5 +289,6 @@ Click "<b>Generate</b>"<br>
     firebase.initializeApp(config);
 </script>
 <script src="https://raw.githack.com/cakfadil/Job/master/Post Generator Blog Android v.4.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
