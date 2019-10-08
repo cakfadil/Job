@@ -1,5 +1,5 @@
 body {
-  background: url("https://3.bp.blogspot.com/-qpD3G6ajttU/XZYCMBWqK6I/AAAAAAAAAss/REk4qJmMoc0ikBuJCNVCA2N1XUYL-YkBwCLcBGAsYHQ/s1600/black-and-white-body-erotic-230986.jpg");
+  background: url("https://4.bp.blogspot.com/-VZMxkI6LTJU/XZX3_x1gprI/AAAAAAAAAsg/ScU7GO8i85wu4xY9-yVkxw42x_vDyCNSgCLcBGAsYHQ/s1400/body-erotic-lingerie-597200.jpg");
   padding: 0px;
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
@@ -99,7 +99,7 @@ table{width:100%;}
 background: green;
 color: white;
 }
-#daftar {
+#Aplikasi {
 background: red;
 color: white;
 width:100%;
@@ -109,11 +109,8 @@ padding: 3px 10px;
 margin: 2px;
 font-weight:bold;
 }
-#daftar:after {
-content: "\2193";
-}
 #daftar:before {
-content: "\2193";
+content: "\270E";
 }
 #userdiv {background:#000;border-radius:8px;padding:4px;}
 @media screen and (max-width: 600px) {
