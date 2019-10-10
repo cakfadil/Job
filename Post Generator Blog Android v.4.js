@@ -2225,6 +2225,10 @@ function clearALL() {
     document.getElementById('rating10').value = '';
     document.getElementById('download10').value = '';
     document.getElementById('update10').value = '';
+    document.getElementById('halaman1').value = '';
+    document.getElementById('halaman2').value = '';
+    document.getElementById('halaman3').value = '';
+    document.getElementById('halamanfull').value = '';
 }
 
 function copyFormat(containerid) {
