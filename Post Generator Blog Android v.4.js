@@ -492,7 +492,8 @@ function Generate5a() {
   "<br>"+"&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;"+update2+"&lt;/td&gt;"+
   "<br>"+"&lt;/tr&gt;"+
   "<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+
-  "<br>"+"&lt;b&gt;Halaman&lt;/b&gt; &lt;button class=&quot;btnhal bred&quot;&gt;1&lt;/button&gt; &lt;a href=&quot;"+halaman2+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;2&lt;/button&gt&lt;/a&gt; &lt;a href=&quot;"+halamanfull+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;Selengkapnya&lt;/button&gt;&lt;/a&gt;"
+  "<br>"+"&lt;div class=&quot;bhal&quot;&gt;"+
+  "<br>"+"&lt;b&gt;Halaman&lt;/b&gt; &lt;button class=&quot;btnhal bred&quot;&gt;1&lt;/button&gt; &lt;a href=&quot;"+halaman2+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;2&lt;/button&gt&lt;/a&gt; &lt;a href=&quot;"+halamanfull+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;Selengkapnya&lt;/button&gt;&lt;/a&gt;&lt;/div&gt;"
 }
 
 function Generate5b() {
@@ -700,7 +701,8 @@ function Generate5b() {
   "<br>"+"&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;"+update5+"&lt;/td&gt;"+
   "<br>"+"&lt;/tr&gt;"+
   "<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+
-  "<br>"+"&lt;b&gt;Halaman&lt;/b&gt; &lt;a href=&quot;"+halaman1+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;1&lt;/button&gt;&lt;/a&gt; &lt;button class=&quot;btnhal bred&quot;&gt;2&lt;/button&gt; &lt;a href=&quot;"+halamanfull+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;Selengkapnya&lt;/button&gt;&lt;/a&gt;"
+  "<br>"+"&lt;div class=&quot;bhal&quot;&gt;"+
+  "<br>"+"&lt;b&gt;Halaman&lt;/b&gt; &lt;a href=&quot;"+halaman1+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;1&lt;/button&gt;&lt;/a&gt; &lt;button class=&quot;btnhal bred&quot;&gt;2&lt;/button&gt; &lt;a href=&quot;"+halamanfull+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;Selengkapnya&lt;/button&gt;&lt;/a&gt;&lt;/div&gt;"
 }
 
 function Generate10() {
@@ -1594,7 +1596,8 @@ function Generate10a() {
   "<br>"+"&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;"+update3+"&lt;/td&gt;"+
   "<br>"+"&lt;/tr&gt;"+
   "<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+
-  "<br>"+"&lt;b&gt;Halaman&lt;/b&gt; &lt;button class=&quot;btnhal bred&quot;&gt;1&lt;/button&gt; &lt;a href=&quot;"+halaman2+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;2&lt;/button&gt&lt;/a&gt; &lt;a href=&quot;"+halaman3+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;3&lt;/button&gt;&lt;/a&gt; &lt;a href=&quot;"+halamanfull+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;Selengkapnya&lt;/button&gt;&lt;/a&gt;"
+  "<br>"+"&lt;div class=&quot;bhal&quot;&gt;"+
+  "<br>"+"&lt;b&gt;Halaman&lt;/b&gt; &lt;button class=&quot;btnhal bred&quot;&gt;1&lt;/button&gt; &lt;a href=&quot;"+halaman2+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;2&lt;/button&gt&lt;/a&gt; &lt;a href=&quot;"+halaman3+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;3&lt;/button&gt;&lt;/a&gt; &lt;a href=&quot;"+halamanfull+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;Selengkapnya&lt;/button&gt;&lt;/a&gt;&lt;/div&gt;"
 }
 
 function Generate10b() {
@@ -1870,7 +1873,8 @@ function Generate10b() {
   "<br>"+"&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;"+update7+"&lt;/td&gt;"+
   "<br>"+"&lt;/tr&gt;"+
   "<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+
-  "<br>"+"&lt;b&gt;Halaman&lt;/b&gt; &lt;a href=&quot;"+halaman1+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;1&lt;/button&gt;&lt/a&gt; &lt;button class=&quot;btnhal bred&quot;&gt;2&lt;/button&gt &lt;a href=&quot;"+halaman3+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;3&lt;/button&gt;&lt;/a&gt; &lt;a href=&quot;"+halamanfull+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;Selengkapnya&lt;/button&gt;&lt;/a&gt;"
+  "<br>"+"&lt;div class=&quot;bhal&quot;&gt;"+
+  "<br>"+"&lt;b&gt;Halaman&lt;/b&gt; &lt;a href=&quot;"+halaman1+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;1&lt;/button&gt;&lt/a&gt; &lt;button class=&quot;btnhal bred&quot;&gt;2&lt;/button&gt &lt;a href=&quot;"+halaman3+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;3&lt;/button&gt;&lt;/a&gt; &lt;a href=&quot;"+halamanfull+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;Selengkapnya&lt;/button&gt;&lt;/a&gt;&lt;/div&gt;"
 }
 
 function Generate10c() {
@@ -2079,7 +2083,8 @@ function Generate10c() {
   "<br>"+"&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;"+update10+"&lt;/td&gt;"+
   "<br>"+"&lt;/tr&gt;"+
   "<br>"+"&lt;/tbody&gt;&lt;/table&gt;"+
-  "<br>"+"&lt;b&gt;Halaman&lt;/b&gt; &lt;a href=&quot;"+halaman1+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;1&lt;/button&gt;&lt/a&gt; &lta href=&quot;"+halaman2+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;2&lt;/button&gt&lt;/a&gt; &lt;button class=&quot;btnhal bred&quot;&gt;3&lt;/button&gt; &lt;a href=&quot;"+halamanfull+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;Selengkapnya&lt;/button&gt;&lt;/a&gt;"
+  "<br>"+"&lt;div class=&quot;bhal&quot;&gt;"+
+  "<br>"+"&lt;b&gt;Halaman&lt;/b&gt; &lt;a href=&quot;"+halaman1+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;1&lt;/button&gt;&lt/a&gt; &lta href=&quot;"+halaman2+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;2&lt;/button&gt&lt;/a&gt; &lt;button class=&quot;btnhal bred&quot;&gt;3&lt;/button&gt; &lt;a href=&quot;"+halamanfull+"&quot;&gt;&lt;button class=&quot;btnhal&quot;&gt;Selengkapnya&lt;/button&gt;&lt;/a&gt;&lt;/div&gt;"
 }
 
 function showhide2() {
@@ -2225,10 +2230,6 @@ function clearALL() {
     document.getElementById('rating10').value = '';
     document.getElementById('download10').value = '';
     document.getElementById('update10').value = '';
-    document.getElementById('halaman1').value = '';
-    document.getElementById('halaman2').value = '';
-    document.getElementById('halaman3').value = '';
-    document.getElementById('halamanfull').value = '';
 }
 
 function copyFormat(containerid) {
