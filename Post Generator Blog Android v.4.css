@@ -113,6 +113,9 @@ font-weight:bold;
 content: "\270E";
 }
 #userdiv {background:#000;border-radius:8px;padding:4px;}
+#user_generator {
+color: white; 
+}
 @media screen and (max-width: 600px) {
   body {
     background-image: url("https://1.bp.blogspot.com/-dhLHYUa9wBM/XZXGCo1yWLI/AAAAAAAAArU/15p6nks9LA8_1da3Ts2-yWYm_GBUFWzogCLcBGAsYHQ/s900/beautiful-beauty-blurred-background-1386604%2B%25281%2529.jpg");
