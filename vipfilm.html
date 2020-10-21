@@ -70,7 +70,42 @@ color: white;
 </div>
 <div id="userdiv">
 <span id="user_generator"></span> <button class="btndefault red" onclick="logout()">Logout</button>
-<p>hsiwidhf</p>yug
+<h1 style="text-align:center;">NDELOK FILM</h1>
+<!-- Tombol Kategori -->
+  <div class="tab" style="text-align:center;">
+    <button class="btn btn-primary btn-sm" onclick="openCity(event, 'Movie')" id="defaultOpen">Movie</button>
+    <button class="btn btn-primary btn-sm" onclick="openCity(event, 'Drama Episode')">Drama Episode</button>
+    <button class="btn btn-primary btn-sm" onclick="openCity(event, 'Anime/Kartun')">Anime/Kartun</button>
+    <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Cara Download</a>
+    <div class="collapse" id="collapseExample" style="margin:10px 0px;">
+      <div class="card card-body hitam" style="text-align:left;">
+		    Cara untuk download film:<br>
+  		  	1. Klik download (untuk mengCopy atau menyalin link).<br>
+    			2. Paste atau tempel pada kolom url browser anda.<br>
+  			  3. Klik tombol download (happy download).
+      </div>
+    </div>
+  </div>
+  <!-- /Tombol kategori -->
+  <br>
+  <!-- Movie -->
+  <div id="Movie" class="tabcontent">
+  <div class="drive-responsive1"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://raw.githack.com/cakfadil/ndelokfilm/main/indexmovie.html" allowfullscreen></iframe></div>
+  </div>
+  <!-- /Movie -->
+  
+  <!-- Drama Episode -->
+  <div id="Drama Episode" class="tabcontent">
+  <div class="drive-responsive1"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://raw.githack.com/cakfadil/ndelokfilm/main/indexdramaepisode.html" allowfullscreen></iframe></div>
+  </div>
+  <!-- /Drama Episode -->
+
+  <!-- Anime/Kartun -->
+  <div id="Anime/Kartun" class="tabcontent">
+  <div class="drive-responsive1"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://raw.githack.com/cakfadil/ndelokfilm/main/indexanimekartun.html" allowfullscreen></iframe></div>
+  </div>
+  </div>
+  <!-- /Anime/Kartun -->
 </div>
 </body>
 
@@ -93,6 +128,23 @@ color: white;
 <script src="https://raw.githack.com/cakfadil/ndelokfilm/main/bootstrap.bundle.min.js"></script>
 <!-- Bootstrap core CSS -->
 <link href="https://raw.githack.com/cakfadil/ndelokfilm/main/bootstrap.min.css" rel="stylesheet">
-<!-- Custom styles for this template -->
 <link href="https://raw.githack.com/cakfadil/ndelokfilm/main/simple.css" rel="stylesheet">
+<!-- kategori -->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 </html>
